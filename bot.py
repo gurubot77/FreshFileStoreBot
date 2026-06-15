@@ -57,12 +57,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     WELCOME_IMAGE = "https://i.imgur.com/Rxk3TQL.jpeg"
 
-    await context.bot.send_photo(
-        await update.message.reply_text("WELCOME TEST")
-        chat_id=update.effective_chat.id,
-        photo=WELCOME_IMAGE,
-        caption="🔥 Welcome to TMBD BOT 🔥"
-    if context.args and context.args[0].startswith("batch_"):
+    await update.message.reply_text("WELCOME TEST")
+
+await context.bot.send_photo(
+    chat_id=update.effective_chat.id,
+    photo=WELCOME_IMAGE,
+    caption="🔥 Welcome to TMBD BOT 🔥")
+
+ if context.args and context.args[0].startswith("batch_"):
         batch_id = context.args[0].replace("batch_", "")
 
         if not await is_joined(context, update.effective_user.id):
