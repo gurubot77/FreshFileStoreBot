@@ -7,8 +7,8 @@ OWNER_ID = "7037415424"
 BOT_USERNAME = "TMBD0_BOT"
 CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
 
-JOIN_CHANNEL = "-1004442708790"
-JOIN_CHANNEL_LINK = "https://t.me/+8MOk7a-LQKMyNzE1"
+JOIN_CHANNEL = "-1004394875788"
+JOIN_CHANNEL_LINK = "https://t.me/+efq1n13g-vlkNTZl"
 
 batch_mode = {}
 
