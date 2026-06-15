@@ -14,7 +14,9 @@ JOIN_CHANNEL_LINK = "https://t.me/+efq1n13g-vlkNTZl"
 
 print("JOIN_CHANNEL =", JOIN_CHANNEL)
 print("JOIN_CHANNEL_LINK =", JOIN_CHANNEL_LINK)
-
+async def get_file_id(update, context):
+    if update.message.video:
+        await update.message.reply_text(update.message.video.file_id)
 batch_mode = {}
 batch_mode = {}
 
