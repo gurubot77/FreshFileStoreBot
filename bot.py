@@ -1,11 +1,11 @@
-import asyncio, sqlite3, uuid
+import asyncio, sqlite3, uuid, os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, BotCommand
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = "8684198903:AAGys75JG7StLoeiy4uxpDg70j2lDmo9EQI"
-BOT_USERNAME = "TMBD0_BOT"
-OWNER_ID = 7037415424
-CHANNEL_ID = 7037415424
+TOKEN = os.getenv("BOT_TOKEN")
+BOT_USERNAME = os.getenv("BOT_USERNAME")
+OWNER_ID = int(os.getenv("OWNER_ID"))
+CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
 
 JOIN_CHANNEL = "-1004442708790"
 JOIN_CHANNEL_LINK = "https://t.me/+8MOk7a-LQKMyNzE1"
