@@ -9,7 +9,13 @@ CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
 
 JOIN_CHANNEL = "-1004394875788"
 JOIN_CHANNEL_LINK = "https://t.me/+efq1n13g-vlkNTZl"
+JOIN_CHANNEL = "-1004394875788"
+JOIN_CHANNEL_LINK = "https://t.me/+efq1n13g-vlkNTZl"
 
+print("JOIN_CHANNEL =", JOIN_CHANNEL)
+print("JOIN_CHANNEL_LINK =", JOIN_CHANNEL_LINK)
+
+batch_mode = {}
 batch_mode = {}
 
 conn = sqlite3.connect("files.db", check_same_thread=False)
