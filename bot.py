@@ -61,11 +61,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         chat_id=update.effective_chat.id,
         photo=WELCOME_IMAGE,
         caption="🔥 Welcome to TMBD BOT 🔥"
-    )
-
-    if context.args and context.args[0].startswith("batch_"):
-        batch_id = context.args[0].replace("batch_", "")
-)
     if context.args and context.args[0].startswith("batch_"):
         batch_id = context.args[0].replace("batch_", "")
 
