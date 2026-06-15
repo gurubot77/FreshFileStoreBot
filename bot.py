@@ -4,7 +4,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, ContextTyp
 
 TOKEN = os.getenv("BOT_TOKEN")
 BOT_USERNAME = os.getenv("BOT_USERNAME")
-OWNER_ID = int(os.getenv("OWNER_ID"))
+BOT_USERNAME = "TMBD_BOT"
 CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
 
 JOIN_CHANNEL = "-1004442708790"
