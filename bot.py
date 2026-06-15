@@ -155,6 +155,7 @@ app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("batchstart", batchstart))
 app.add_handler(CommandHandler("batchend", batchend))
 app.add_handler(CommandHandler("help", help_cmd))
+app.add_handler(MessageHandler(filters.VIDEO, get_file_id))
 app.add_handler(MessageHandler(filters.ALL & ~filters.COMMAND, save_any))
 
 print("Batch File Store Bot Running...")
