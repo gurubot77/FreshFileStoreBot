@@ -3,7 +3,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, BotComm
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
 TOKEN = os.getenv("BOT_TOKEN")
-BOT_USERNAME = os.getenv("TMBD0_BOT")
+OWNER_ID = "7037415424"
 BOT_USERNAME = "TMBD0_BOT"
 CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
 
